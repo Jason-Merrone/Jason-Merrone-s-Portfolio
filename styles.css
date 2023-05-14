@@ -1,0 +1,84 @@
+
+body{
+    background-color: blueviolet;
+    font-family: 'Caveat', cursive;
+    font-size: 3vw;
+}
+
+  /* Styling for the navbar begins */
+ #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: #FFFFFF;
+  }
+  
+  #navbar-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 7vw;
+    font-family: 'Pacifico', cursive;
+  }
+
+  #navbar-links {
+    display: flex;
+    text-align:center;
+    margin-left: 55px;
+    margin-right: 7vw;
+  }
+  
+  .navbar-link {
+    margin-left: 5vw;
+    color: #FFFFFF;
+  }
+
+  @media screen and (max-width: 555px) {
+    body{
+      font-size: 2.9vh;
+    }
+    #navbar-links {
+      flex-direction: column;
+    }
+    .navbar-link{
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+    }
+  }
+  /* Styling for the navbar ends */
+
+  /* Styling for profile image begins */
+  #image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top:2vw;
+    margin-bottom:5vw;
+    color:white;
+  }
+
+  #welcome-message{
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    text-align: center;
+    font-size: 2.75vw;
+  }
+
+  #about-me{
+    display: flex;
+    text-align: center;
+    margin-left:40vh;
+    margin-right:40vh;
+    font-size: 1.45vw;
+  }
+
+  #profile-image {
+    margin-top:5px;
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+  }  
+  /* Styling for profile image ends */
