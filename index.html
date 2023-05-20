@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="script.js" defer></script>
@@ -17,17 +18,54 @@
                 Jason Merrone
             </section>
             <section id="navbar-links">
-                <a class="navbar-link" href="#">Home</a>
-                <a class="navbar-link" href="#">Projects</a>
-                <a class="navbar-link" href="#">Contact</a>
+                <a href="#top" class="button-link">
+                    <button class="navbar-link" href="#">
+                        <span class = "material-icons">home</span>
+                        Home
+                    </button>
+                </a>
+                <a href="#" class="button-link">
+                    <button class="navbar-link" href="#">
+                        <span class = "material-icons">school</span>
+                        Education
+                    </button>
+                </a>
+                <a href="#" class="button-link">
+                    <button class="navbar-link" href="#">
+                        <span class = "material-icons">terminal</span>
+                        Skills
+                    </button>
+                </a>
+                <a href="#" class="button-link">
+                    <button class="navbar-link" href="#">
+                        <span class = "material-icons">science</span>
+                        Projects
+                    </button>
+                </a>
+                <a href="#" class="button-link">
+                    <button class="navbar-link" href="#">
+                        <span class = "material-icons">person</span>
+                        About
+                    </button>
+                </a>
+                <a href="#" class="button-link">
+                    <button class="navbar-link" href="#">
+                        <span class = "material-icons">contact_page</span>
+                        Contact
+                    </button>
+                </a>
             </section>
         </nav>
         <section id="home-container">
             <h1 id="welcome-message">Jason Merrone's Portfolio Website</h1>
             <h2 id="brief-intro">I am a versatile software developer with a strong foundation in mathematics. I'm known for rapid learning, effective communication, and efficient problem-solving skills.</h2>
             <div id="scroll-buttons">
-                <button id="scroll-button">Download Resume</button>
-                <button id="scroll-button">Visit my Github</button>
+                <a href="Resume - Jason Merrone.pdf" class="scroll-link" download>
+                    <button class="scroll-button">Download Resume</button>
+                </a>
+                <a href="https://github.com/Jason-Merrone/" class="scroll-link">
+                    <button class="scroll-button">Visit my Github</button>
+                </a>
             </div>
         </section>
     </body>
