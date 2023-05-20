@@ -1,84 +1,135 @@
-
-body{
-    background-color: blueviolet;
-    font-family: 'Caveat', cursive;
-    font-size: 3vw;
+body {
+  font-family: 'Caveat', cursive;
+  font-size: 3vw;
+  background-image: url('mountains.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color:#838383
 }
 
-  /* Styling for the navbar begins */
- #navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333333;
-    color: #FFFFFF;
-  }
-  
-  #navbar-title {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-left: 7vw;
-    font-family: 'Pacifico', cursive;
-  }
+/* Styling for the navbar begins */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  z-index: 100;
+  opacity: 0.8;
+  transition: opacity .3s ease;
+}
 
+#navbar.navbar-scroll {
+  opacity: 1;
+}
+
+#navbar-title {
+  display: flex;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 2vw;
+}
+
+#navbar-links {
+  display: flex;
+}
+
+.navbar-link {
+  margin-left: 10px;
+  color: #FFFFFF;
+  font-size: 1.5vw;
+}
+/* Styling for the navbar ends */
+
+
+/* Styling for homepage begins */
+
+#home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 5vw;
+  margin-inline: 7vw;
+  color: white;
+}
+
+#welcome-message {
+  margin-top:10vh;
+  font-size: 2.5vw;
+  text-shadow: 0px 0px 20px rgba(66, 65, 66, 0.6);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+#welcome-message:hover {
+  transform: scale(1.04);
+  text-shadow: 0px 0px 30px rgba(66, 65, 66, 0.8), 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#brief-intro{
+  font-size: 1.5vw;
+  text-shadow: 0px 0px 20px rgba(66, 65, 66, 0.6);
+  margin-inline: 20vw;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+#brief-intro:hover {
+  transform: scale(1.04);
+  text-shadow: 0px 0px 30px rgba(66, 65, 66, 0.8), 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#scroll-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+#scroll-buttons.hide-scroll {
+  opacity: 0;
+}
+
+#scroll-button{
+  background-color: #333333;
+  font-size:1.65vw;
+  box-shadow: 0px 0px 20px rgba(66, 65, 66, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-color: transparent;
+  opacity: 0.8;
+}
+
+#scroll-button:hover {
+  transform: scale(1.04);
+  text-shadow: 0px 0px 30px rgba(66, 65, 66, 0.8), 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #1f1f1f;
+  opacity: 1;
+}
+
+/* Styling for homepage ends */
+
+
+
+@media screen and (max-width: 555px) {
+  body {
+    font-size: 2.9vh;
+  }
   #navbar-links {
-    display: flex;
-    text-align:center;
-    margin-left: 55px;
-    margin-right: 7vw;
-  }
-  
-  .navbar-link {
-    margin-left: 5vw;
-    color: #FFFFFF;
-  }
-
-  @media screen and (max-width: 555px) {
-    body{
-      font-size: 2.9vh;
-    }
-    #navbar-links {
-      flex-direction: column;
-    }
-    .navbar-link{
-      margin-top: 2vw;
-      margin-bottom: 2vw;
-    }
-  }
-  /* Styling for the navbar ends */
-
-  /* Styling for profile image begins */
-  #image-container{
-    display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    margin-top:2vw;
-    margin-bottom:5vw;
-    color:white;
+  }
+  #navbar-title {
+    font-size: 1.8vw;
   }
 
-  #welcome-message{
-    font-family: 'Pacifico', cursive;
-    display: flex;
-    text-align: center;
-    font-size: 2.75vw;
+  .navbar-link {
+    margin-left: 7px;
+    font-size: 1.2vw;
   }
-
-  #about-me{
-    display: flex;
-    text-align: center;
-    margin-left:40vh;
-    margin-right:40vh;
-    font-size: 1.45vw;
-  }
-
-  #profile-image {
-    margin-top:5px;
-    border-radius: 50%;
-    width: 30vw;
-    height: 30vw;
-  }  
-  /* Styling for profile image ends */
+}
