@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jason Merrone's Portfolio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <nav id = "navbar">
-            <section id="navbar-title">
-                Jason Merrone
-            </section>
-            <section id="navbar-links">
-                <a href="#top" class="button-link">
-                    <button class="navbar-link" href="#">
-                        <span class = "material-icons">home</span>
-                        Home
-                    </button>
-                </a>
-                <a href="#" class="button-link">
-                    <button class="navbar-link" href="#">
-                        <span class = "material-icons">school</span>
-                        Education
-                    </button>
-                </a>
-                <a href="#" class="button-link">
-                    <button class="navbar-link" href="#">
-                        <span class = "material-icons">terminal</span>
-                        Skills
-                    </button>
-                </a>
-                <a href="#" class="button-link">
-                    <button class="navbar-link" href="#">
-                        <span class = "material-icons">science</span>
-                        Projects
-                    </button>
-                </a>
-                <a href="#" class="button-link">
-                    <button class="navbar-link" href="#">
-                        <span class = "material-icons">person</span>
-                        About
-                    </button>
-                </a>
-                <a href="#" class="button-link">
-                    <button class="navbar-link" href="#">
-                        <span class = "material-icons">contact_page</span>
-                        Contact
-                    </button>
-                </a>
-            </section>
-        </nav>
-        <section id="home-container">
-            <h1 id="welcome-message">Jason Merrone's Portfolio Website</h1>
-            <h2 id="brief-intro">I am a versatile software developer with a strong foundation in mathematics. I'm known for rapid learning, effective communication, and efficient problem-solving skills.</h2>
-            <div id="scroll-buttons">
-                <a href="Resume - Jason Merrone.pdf" class="scroll-link" download>
-                    <button class="scroll-button">Download Resume</button>
-                </a>
-                <a href="https://github.com/Jason-Merrone/" class="scroll-link">
-                    <button class="scroll-button">Visit my Github</button>
-                </a>
-            </div>
+<head>
+    <title>Jason Merrone's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav id="navbar">
+        <section id="navbar-title">
+            Jason Merrone
         </section>
-    </body>
+        <!-- Navbar HTML starts here -->
+        <section id="navbar-links">
+            <a href="#top" class="button-link">
+                <button class="navbar-link" href="#">
+                    <span class="material-icons">home</span>
+                    Home
+                </button>
+            </a>
+            <a href="#about-container" class="button-link">
+                <button class="navbar-link" href="#">
+                    <span class="material-icons">person</span>
+                    About
+                </button>
+            </a>
+            <a href="#" class="button-link">
+                <button class="navbar-link" href="#">
+                    <span class="material-icons">school</span>
+                    Education
+                </button>
+            </a>
+            <a href="#" class="button-link">
+                <button class="navbar-link" href="#">
+                    <span class="material-icons">terminal</span>
+                    Skills
+                </button>
+            </a>
+            <a href="#" class="button-link">
+                <button class="navbar-link" href="#">
+                    <span class="material-icons">science</span>
+                    Projects
+                </button>
+            </a>
+            <a href="#" class="button-link">
+                <button class="navbar-link" href="#">
+                    <span class="material-icons">contact_page</span>
+                    Contact
+                </button>
+            </a>
+        </section>
+    </nav>
+    <!-- Home HTML starts here -->
+    <section id="home-container">
+        <h1 id="welcome-message">Jason Merrone's Portfolio Website</h1>
+        <h2 id="brief-intro">I am a versatile software developer with a strong foundation in mathematics. I'm known for rapid learning, effective communication, and efficient problem-solving skills.</h2>
+        <div id="scroll-buttons">
+            <a href="Resume - Jason Merrone.pdf" class="scroll-link" download>
+                <button class="scroll-button">Download Resume</button>
+            </a>
+            <a href="https://github.com/Jason-Merrone/" class="scroll-link" target="_blank">
+                <button class="scroll-button">Visit my Github</button>
+            </a>
+        </div>
+    </section>
+    <!-- About HTML starts here -->
+    <section id="about-container">
+        <div id="about-content">
+            <h1 id="about-header">About Me</h1>
+            <ul id="about-bullet-points">
+                <li class="about-bullet-point">I am a current student pursuing a Bachelor's degree in Mathematics with a Computational Mathematics emphasis from Utah State University.</li>
+                <li class="about-bullet-point">I have been coding since I was in middle school and I have a wide range of experience across many different languages.</li>
+                <li class="about-bullet-point">I also have a passion for mathematics and how it applies to practical, real world problems across various fields.</li>
+                <li class="about-bullet-point">I am highly adaptable and thrive in diverse work environments. I can quickly learn and adjust to new technologies, tools, and processes, allowing me to contribute effectively in different projects and teams.</li>
+                <li class="about-bullet-point">I am confident that I will be a valuable asset to any team I join. I bring a strong skill set, a positive attitude, and a willingness to contribute and support others in achieving shared goals.</li>
+            </ul>
+        </div>
+        <img src="mountains.jpg" alt="Jason Merrone" id="about-image">
+    </section>
+</body>
 </html>
