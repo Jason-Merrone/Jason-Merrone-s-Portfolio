@@ -5,10 +5,6 @@ html{
 body {
   font-family: 'Caveat', cursive;
   font-size: 3vw;
-  background-image: url('mountains.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   background-color:#838383
@@ -77,19 +73,21 @@ body {
 /* Styling for homepage begins */
 
 #home-container {
+  background-image: url('mountains.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  margin-top: 2vw;
-  margin-bottom: 5vw;
-  margin-inline: 7vw;
   color: white;
 }
 
 #welcome-message {
-  margin-top:10vh;
+  margin-top:-50vh;
   font-size: 2.5vw;
   text-shadow: 0px 0px 20px rgba(66, 65, 66, 0.6);
   transition: transform 0.3s ease, text-shadow 0.3s ease;
@@ -100,6 +98,7 @@ body {
 }
 
 #brief-intro{
+  margin-top:-65vh;
   font-size: 1.5vw;
   text-shadow: 0px 0px 20px rgba(66, 65, 66, 0.6);
   margin-inline: 20vw;
@@ -139,11 +138,21 @@ body {
   background-color: #1f1f1f;
   opacity: 1;
 }
-
 /* Styling for homepage ends */
+
+/* Styling for about page begins */
+#about-container{
+  margin-top:0vw;
+  color:white;
+}
+/* Styling for about page ends */
 
 /* Below is a media attribute that resizes things for common mobile screen dimensions */
 @media screen and (max-width: 539px) {
+  .material-icons{
+    font-size: 3.2vw;
+  }
+  /* navbar resize */
   #navbar-links {
     flex-direction: column;
   }
@@ -157,17 +166,18 @@ body {
   #navbar.navbar-scroll {
     opacity: 0;
   }
-  .material-icons{
-    font-size: 3.2vw;
-  }
+  /* home resize */
   #welcome-message {
-    margin-top:20vh;
-    font-size: 4vw;
+    margin-top:-38vh;
+    font-size: 5vw;
   }
   #brief-intro{
+    margin-top:-60vh;
     font-size: 4vw;
   }
   .scroll-button {
     font-size: 4vw;
   }
+  /* about resize */
+  
 }
